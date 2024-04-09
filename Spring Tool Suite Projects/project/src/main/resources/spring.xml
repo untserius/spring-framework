@@ -17,6 +17,6 @@
     </bean>
 
     <bean id="Laptop" class="com.firstspring.project.Laptop"></bean>
-    <bean id="Desktop" class="com.firstspring.project.Desktop"></bean>
+    <bean id="Desktop" class="com.firstspring.project.Desktop" primary="true"></bean>
 
 </beans>
