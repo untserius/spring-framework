@@ -1,7 +1,7 @@
 package com.firstspring.project;
 
-public class Laptop {
+public class Laptop implements Computer {
     public void compile(){
-        System.out.println("Code compiled...");
+        System.out.println("Code compiled by LAPTOP");
     }
 }

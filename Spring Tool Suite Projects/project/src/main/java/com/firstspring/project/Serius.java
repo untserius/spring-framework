@@ -3,7 +3,7 @@ package com.firstspring.project;
 public class Serius {
 
 	private int age;
-	private Laptop laptop;
+	private Computer com;
 
 	public int getAge() {
 		return age;
@@ -25,14 +25,14 @@ public class Serius {
 
 	public void code() {
 		System.out.println("I am coding...");
-		laptop.compile();
+		com.compile();
 	}
 
-	public Laptop getLaptop() {
-		return laptop;
+	public Computer getCom() {
+		return com;
 	}
 
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
+	public void setCom(Computer com) {
+		this.com = com;
 	}
 }

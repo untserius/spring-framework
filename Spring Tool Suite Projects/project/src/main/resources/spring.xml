@@ -5,15 +5,18 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- spring takes the responsibility to create object "Serius"-->
-    <bean id="Serius" class="com.firstspring.project.Serius">
-<!--        This will call the setter method and set the age as 10-->
+    <bean id="Serius" class="com.firstspring.project.Serius" autowire="byType">
+<!--        This will call the setter method and set the age as 23-->
 <!--        <property name="age" value="23"></property>-->
 
 <!--        Use constructor args to use parameterized constructor as injection-->
-        <constructor-arg value="12"></constructor-arg>
-        <property name="laptop" ref="laptop"></property>
+<!--        <constructor-arg value="12"></constructor-arg>-->
+
+
+<!--        <property name="com" ref="com"></property>-->
     </bean>
 
-    <bean id="laptop" class="com.firstspring.project.Laptop"></bean>
+    <bean id="Laptop" class="com.firstspring.project.Laptop"></bean>
+    <bean id="Desktop" class="com.firstspring.project.Desktop"></bean>
 
 </beans>
