@@ -9,13 +9,18 @@ public class Serius {
 		return age;
 	}
 
-	public void setAge(int age) {
-		System.out.println("Age is assigned...");
-		this.age = age;
-	}
+//	public void setAge(int age) {
+//		System.out.println("Age is assigned...");
+//		this.age = age;
+//	}
 
 	Serius(){
 		System.out.println("Object is getting created...");
+	}
+
+	Serius(int age){
+		System.out.println("Parameterized constructor activated...");
+		this.age = age;
 	}
 
 	public void code() {
