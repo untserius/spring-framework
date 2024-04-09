@@ -4,7 +4,10 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- bean definitions here -->
-    <bean id="Serius" class="com.firstspring.project.Serius" scope="prototype"></bean>
+    <!-- spring takes the responsibility to create object "Serius"-->
+    <bean id="Serius" class="com.firstspring.project.Serius">
+<!--        This will call the setter method and set the age as 10-->
+        <property name="age" value="23"></property>
+    </bean>
 
 </beans>
