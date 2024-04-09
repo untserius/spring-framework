@@ -8,6 +8,9 @@
     <bean id="Serius" class="com.firstspring.project.Serius">
 <!--        This will call the setter method and set the age as 10-->
         <property name="age" value="23"></property>
+        <property name="laptop" ref="laptop"></property>
     </bean>
+
+    <bean id="laptop" class="com.firstspring.project.Laptop"></bean>
 
 </beans>

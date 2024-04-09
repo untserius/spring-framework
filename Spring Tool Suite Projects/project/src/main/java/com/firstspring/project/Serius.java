@@ -2,7 +2,8 @@ package com.firstspring.project;
 
 public class Serius {
 
-	int age;
+	private int age;
+	private Laptop laptop;
 
 	public int getAge() {
 		return age;
@@ -19,6 +20,14 @@ public class Serius {
 
 	public void code() {
 		System.out.println("I am coding...");
+		laptop.compile();
 	}
 
+	public Laptop getLaptop() {
+		return laptop;
+	}
+
+	public void setLaptop(Laptop laptop) {
+		this.laptop = laptop;
+	}
 }

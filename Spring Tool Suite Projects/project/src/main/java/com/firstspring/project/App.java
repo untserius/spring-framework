@@ -14,9 +14,8 @@ public class App
         // Retrieves the bean named "Serius" from the Spring application context.
         // The getBean method returns an object of type Object, so you need to cast it to object type "Serius".
         Serius s = (Serius) context.getBean("Serius");
-//        s.age = 10;
-//        s.code();
-        System.out.println(s.age);
+        s.code();
+        System.out.println(s.getAge());
 
     }
 }
